@@ -1,0 +1,12 @@
+Carre.o: Carre.cpp Carre.hpp Forme.hpp Point.hpp ez-draw++.hpp
+Cercle.o: Cercle.cpp Cercle.hpp Forme.hpp Point.hpp ez-draw++.hpp
+Ellipse.o: Ellipse.cpp Ellipse.hpp Forme.hpp Point.hpp ez-draw++.hpp
+ez-draw++.o: ez-draw++.cpp ez-draw++.hpp
+Forme.o: Forme.cpp Forme.hpp Point.hpp ez-draw++.hpp Rectangle.hpp \
+ Ellipse.hpp Carre.hpp
+Formes.o: Formes.cpp Formes.hpp ez-draw++.hpp Forme.hpp Point.hpp
+main.o: main.cpp ez-draw++.hpp Formes.hpp Forme.hpp Point.hpp \
+ Rectangle.hpp Carre.hpp Ellipse.hpp Cercle.hpp
+Point.o: Point.cpp Point.hpp ez-draw++.hpp
+Rectangle.o: Rectangle.cpp Rectangle.hpp Forme.hpp Point.hpp \
+ ez-draw++.hpp
